@@ -1,0 +1,28 @@
+@import "init";
+
+.Header {
+  height: 50px;
+  padding: $basic-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #menu {
+    font-family: "Lora", serif;
+
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+
+  .inactive {
+    color: black;
+    font-weight: 400;
+  }
+
+  .active {
+    color: $basic-color;
+    font-weight: 700;
+  }
+}
