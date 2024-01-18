@@ -7,13 +7,9 @@
   align-items: center;
   justify-content: space-between;
 
-  #menu {
-    font-family: "Lora", serif;
-
-    a {
+  #menu > a {
       margin-left: 10px;
       text-decoration: none;
-    }
   }
 
   .inactive {

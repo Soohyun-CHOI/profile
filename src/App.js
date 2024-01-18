@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,9 +17,7 @@ function App() {
                   <Route path="*" element={<NotFound />} />
               </Routes>
           </div>
-          <div id="Footer">
-              © Copyright 2024 Soohyun Choi | All Rights Reserved
-          </div>
+          <Footer />
     </div>
   );
 }
