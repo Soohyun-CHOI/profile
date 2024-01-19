@@ -1,0 +1,27 @@
+@import "init";
+
+.NotFound {
+  text-align: center;
+  div {
+    margin: 30px 0;
+  }
+
+  span {
+    font-family: "Calistoga", serif;
+    font-size: 30px;
+  }
+
+  .blue {
+    color: $basic-color;
+    margin-right: 10px;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  a {
+    color: #aaaaaa;
+    font-size: 12px;
+  }
+}
