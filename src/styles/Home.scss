@@ -1,0 +1,32 @@
+@import "init";
+
+.Home {
+  padding: $basic-padding;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .left-side {
+    margin-right: 200px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: $basic-color;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-family: "DM Serif Display", serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110px;
+  }
+
+  img {
+    width: 350px;
+    -webkit-filter: drop-shadow(1px -3px 20px #cccccc);
+    filter: drop-shadow(1px -3px 20px #cccccc);
+  }
+}

@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 * {
   font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
 }
 
-$basic-padding: 0 30px;
+$basic-padding: 0 50px;
 
 $basic-color: #0077b6;
