@@ -1,8 +1,8 @@
 function Projects() {
     return (
-      <div className="Projects">
-          Projects
-      </div>
+        <div className="Projects">
+            Projects
+        </div>
     );
 }
 

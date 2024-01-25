@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "../styles/Header.scss";
 
 function Header() {
@@ -8,15 +8,15 @@ function Header() {
             <div id="logo">Soohyun Choi</div>
             <div id="menu">
                 <NavLink to="/"
-                         className={({isActive})  => isActive ? "active" : "inactive"}>Home</NavLink>
+                         className={({isActive}) => isActive ? "active" : "inactive"}>Home</NavLink>
                 <NavLink to="/projects"
-                         className={({isActive})  => isActive ? "active" : "inactive"}>Projects</NavLink>
+                         className={({isActive}) => isActive ? "active" : "inactive"}>Projects</NavLink>
                 <NavLink to="/blog"
-                         className={({isActive})  => isActive ? "active" : "inactive"}>Blog</NavLink>
+                         className={({isActive}) => isActive ? "active" : "inactive"}>Blog</NavLink>
                 <NavLink to="/resume"
-                         className={({isActive})  => isActive ? "active" : "inactive"}>Resume</NavLink>
+                         className={({isActive}) => isActive ? "active" : "inactive"}>Resume</NavLink>
                 <NavLink to="/contact"
-                         className={({isActive})  => isActive ? "active" : "inactive"}>Contact</NavLink>
+                         className={({isActive}) => isActive ? "active" : "inactive"}>Contact</NavLink>
             </div>
         </div>
     );
