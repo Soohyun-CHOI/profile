@@ -10,8 +10,17 @@ app.use(express.json());
 const indexRouter = require("./router/index");
 app.use("/", indexRouter);
 
-// Start server with a different port
+// start server with a different port
 const PORT = 5001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+// import database info
+require("dotenv").config();
+const dbConfig = {
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
+};
