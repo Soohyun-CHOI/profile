@@ -12,4 +12,14 @@ router.get("/projects", async (req, res) => {
     }
 });
 
+router.get("/blogs", async (req, res) => {
+    try {
+        const results = await db.query("SELECT * FROM blogs");
+        res.json(results);
+    } catch (err) {
+        console.error("Error in query: ", err);
+        res.status(500).send("Error in query");
+    }
+});
+
 module.exports = router;

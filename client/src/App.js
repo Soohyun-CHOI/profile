@@ -1,23 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {Routes, Route} from "react-router-dom"
 import Header from "./components/Header";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Blog from "./components/Blog";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Blog from "./pages/Blog";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 
 function App() {
-
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:5001/projects")
-            .then(response => response.json())
-            .then(data => setProjects(data))
-            .catch(error => console.error("Error:", error));
-    }, []);
-
     return (
         <div className="App">
             <Header/>
@@ -29,11 +19,6 @@ function App() {
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>
-            <>
-                {projects.map(project => (
-                    <li key={project.id}>{project.title}</li>
-                ))}
-            </>
             <Footer/>
         </div>
     );
